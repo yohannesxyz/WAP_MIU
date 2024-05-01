@@ -1,2 +1,49 @@
+.myCharachters{
+color:yellow;
+}
+p{
+    font-family: cursive;
+}
+body{
+    background-color: darkslategray;
+    color:aliceblue;
+}
+h1,h2{
+    color:blue;
+}
+.Moods{
+    width: 200px ;
+}
+.VerificationPic{
+    width: 50px;
+}
+a{
+    color:cyan;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+#aboutMe::first-letter{
+    font-size: 2em;
+    
+}
+#movieDetails{
+    list-style-type:circle; 
+    color: azure;
+    line-height: 150%;
+    
+}
+#plotLine{
+    text-align: left;
+    width: 50%;
+}
 
-
+.listReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style-type:decimal; 
+    margin: 5px;
+  }
+  
