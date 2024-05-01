@@ -1,56 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styleme.css" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styleme.css" type="text/css" />
     <title>About-me</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Yohannes Sileshi Haile</h1>
-    <p>My name is yohannes and I am <span class="myCharachters">goofy</span>,<span class="myCharachters">nerdy</span>,and <span class="myCharachters">fun</span>.</p>
-    <hr>
+    <p id="aboutMe">
+      My name is yohannes and I am
+      <span class="myCharachters">goofy</span>,<span class="myCharachters"
+        >nerdy</span
+      >,and <span class="myCharachters">fun</span>.
+    </p>
+    <hr />
     <h2>My Classes This Quarter</h2>
     <ul>
-        <li>WAP</li>
-        <li>WAA</li>
-        <li>EA</li>
-        <li>ASD</li>
+      <li>WAP</li>
+      <li>WAA</li>
+      <li>EA</li>
+      <li>ASD</li>
     </ul>
-<h2>My Favorite Movies</h2>
-<ol>
-    <li>The Matrix (<a href="https://www.imdb.com/title/tt0133093/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520mat">IMDB</a>)</li>
-    <li>The Dark Knight(<a href="https://www.imdb.com/title/tt0468569/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520dark">IMDB</a>)</li>
-    <li>Good Will Hunting(<a href="https://www.imdb.com/title/tt0119217/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_good%2520will">IMDB</a>)</li>
-    <li>Django Unchained(<a href="https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1">IMDB</a>)</li>
-    <li>Forrest Gump(<a href="https://www.imdb.com/title/tt0109830/?ref_=nv_sr_srsg_0_tt_1_nm_7_q_forre">IMDB</a>)</li>
-</ol>
-<h2>My Moods</h2>
-<div>
-    <p>Happy:
-    <img class="Moods" src="./images/happy.jpg" alt="happy me">Sad:<img class="Moods" src="./images/sad.jpg" alt="sad me">
-    </p>
-    
-        
-    
+    <h2>My Favorite Movies</h2>
+    <ul class="listReverse">
+      <li>
+        The Matrix (<a
+          href="https://www.imdb.com/title/tt0133093/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520mat"
+          >IMDB</a
+        >)
+        <ul id="movieDetails">
+          <li>
+            <span class="myCharachters">Director</span>
+
+            <p>Lana Wachowski / Lilly Wachowski</p>
+          </li>
+
+          <li>
+            <span class="myCharachters">Genre</span>
+            <p>Science Fiction / Action / Adventure</p>
+          </li>
+
+          <li>
+            <span class="myCharachters">PlotLine</span>
+            <p id="plotLine">
+              When a beautiful stranger leads computer hacker Neo to a
+              forbidding underworld, he discovers the shocking truth--the life
+              he knows is the elaborate deception of an evil
+              cyber-intelligence.(<a
+                href="https://en.wikipedia.org/wiki/The_Matrix#Plot"
+                >More</a
+              >)
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        The Dark Knight(<a
+          href="https://www.imdb.com/title/tt0468569/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520dark"
+          >IMDB</a
+        >)
+      </li>
+      <li>
+        Good Will Hunting(<a
+          href="https://www.imdb.com/title/tt0119217/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_good%2520will"
+          >IMDB</a
+        >)
+      </li>
+      <li>
+        Django Unchained(<a
+          href="https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1"
+          >IMDB</a
+        >)
+      </li>
+      <li>
+        Forrest Gump(<a
+          href="https://www.imdb.com/title/tt0109830/?ref_=nv_sr_srsg_0_tt_1_nm_7_q_forre"
+          >IMDB</a
+        >)
+      </li>
+    </ul>
+    <h2>My Moods</h2>
+    <div>
+      Happy:
+      <img class="Moods" src="./images/happy.jpg" alt="happy me" />Sad:<img
+        class="Moods"
+        src="./images/sad.jpg"
+        alt="sad me"
+      />
+    </div>
+
     <h2>Fun Facts About My Neighbors</h2>
     <ul>
-        
-        <li><p>Kirubel: very kind and positive guy that knows how to see the best in every situation.</p></li>
-        
+      <li>
+        Kirubel: very kind and positive guy that knows how to see the best in
+        every situation.
+      </li>
     </ul>
-</div>
-<a
-href="https://validator.w3.org/nu/?doc=https://yohannesxyz.github.io/WAP_MIU/lab1/aboutme.html"
->
-<img class="VerificationPic" src="./images/htmlchecker.png" alt="html validator" >
-</a>
-<a
-href="https://validator.w3.org/nu/?doc=https://yohannesxyz.github.io/WAP_MIU/lab1/aboutme.html"
->
-<img class="VerificationPic" src="./images/cssChecker.png" alt="html validator" width="50">
-</a>
 
-
-</body>
+    <a
+      href="https://validator.w3.org/nu/?doc=https://yohannesxyz.github.io/WAP_MIU/lab1/aboutme.html"
+    >
+      <img
+        class="VerificationPic"
+        src="./images/htmlchecker.png"
+        alt="html validator"
+      />
+    </a>
+    <a
+      href="https://validator.w3.org/nu/?doc=https://yohannesxyz.github.io/WAP_MIU/lab1/aboutme.html"
+    >
+      <img
+        class="VerificationPic"
+        src="./images/cssChecker.png"
+        alt="html validator"
+        width="50"
+      />
+    </a>
+  </body>
 </html>
