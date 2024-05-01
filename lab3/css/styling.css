@@ -54,7 +54,7 @@ h1 {
 #placeHolder:hover{
     background-color: blueviolet;
 }
-#shoppingImg {
+.shoppingImg {
   width: 20px;
   height: 20px;
 }
