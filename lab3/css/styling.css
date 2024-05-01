@@ -79,15 +79,13 @@ td {
   border-style: ridge;
   text-align: center;
   margin: auto;
-padding: auto;
+padding:5px;
 height: 30px;
 }
 #total {
   text-align:right;
 }
-.cart{
-  text-align: center;  
-}
+
 .quantity{
     border: 1px solid black;
 padding-right: 5px;
