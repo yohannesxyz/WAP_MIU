@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styling.css">
+    <title>order</title>
+</head>
+<body>
+    <div>
+<div id="header">
+    <img id="logo" src="images/logo.png" alt="logo">
+ <span id="welcomeMsg">Welcome, Tina</span>
+    <span id="logoutBtn"> Logout</span>
+</div>
+<div id="body">
+<h2>Product List</h2>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Stock</th>
+    <th>Actions</th>
+</tr>
+    <tr>
+<td>Node.js</td>
+<td>9.99</td>
+<td>8</td>
+<td><img id="shoppingImg" src="images/shopingCart.png" alt="shoping cart"></td>
+    </tr>
+    <tr>
+        <td>React</td>
+        <td>19.99</td>
+        <td>5</td>
+        <td ><img class="cart" id="shoppingImg" src="images/shopingCart.png" alt="shoping cart"></td>
+    </tr>
+    <tr>
+        <td>Angular</td>
+        <td>29.99</td>
+        <td>13</td>
+        <td class="cart"><img id="shoppingImg" src="images/shopingCart.png" alt="shoping cart"></td>
+    </tr>
+
+</table>
+
+<h2>Your shopping cart</h2>
+<table>
+    <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Total</th>
+    <th>Quantitiy</th>
+    </tr>
+    <tr>
+        <td>Node.js</td>
+        <td>9.99</td>
+        <td>9.99</td>
+        <td>- <span class="quantity">1</span>+</td>
+    </tr>
+    <tr>
+        <td>Angular</td>
+        <td>29.99</td>
+        <td>290.99</td>
+        <td>- <span class="quantity">10</span>+</td>
+    </tr>
+    <tr><td id="total" colspan="4">Total: 300.98</td></tr>
+    
+</table>
+<br>
+<span id="placeHolder">Place holder</span>
+
+</div>
+
+    </div>
+    <div>
+    <a
+    href="https://validator.w3.org/nu/?doc=https://yohannesxyz.github.io/WAP_MIU/lab3/order.html"
+  >
+    <img
+      class="VerificationPic"
+      src="./images/htmlchecker.png"
+      alt="html validator"
+    >
+  </a>
+  <a
+    href="https://jigsaw.w3.org/css-validator/validator?uri=https://yohannesxyz.github.io/WAP_MIU/lab3/order.html"
+  >
+    <img
+      class="VerificationPic"
+      src="./images/cssChecker.png"
+      alt="css validator"
+    
+    >
+  </a>
+</div>
+</body>
+</html>
