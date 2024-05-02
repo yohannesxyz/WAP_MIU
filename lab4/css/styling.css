@@ -1,70 +1,84 @@
-#page{
-    border-color:rgba(34, 139, 130,0.5);
-    border-radius: 0.5px;
-    border-style:solid;
-    
-    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 19px;
 }
-#header{
+
+#page {
+    border-color: rgba(34, 139, 130, 0.5);
+    border-radius: 0.5px;
+    border-style: solid;
+    padding: 10px;
+}
+
+#header {
     background-color: cadetblue;
     padding: 10px;
 }
-#title{
+
+#title {
     font-size: 20px;
     font-weight: bold;
     padding-right: 30px;
-   
+}
 
-}
-#body{
- 
+#body {
     display: flex;
-    padding-bottom: 40px;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-#left{
-flex-grow: 1;
+
+#left, #right {
+    flex: 1;
+    padding: 10px;
 }
-#right{
-    flex-grow: 1;
+
+.asterix {
+    color: red;
 }
-.asterix{
-    color:red;
-}
-.underlinedText{
+
+.underlinedText {
     text-decoration: underline;
 }
-#checkBoxes{
+
+#checkBoxes {
     display: flex;
     flex-direction: column;
-    padding-left: 90px;
-}
-#paymentMode{
-display: flex;
-}
-button{
- background-color:cadetblue ;
- color: white;
- padding: 3px 20px;
- /* padding-right: 20px; */
- text-align: center;
- margin: 10px;
 }
 
-label{
+#paymentMode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    background-color: cadetblue;
+    color: white;
+    padding: 3px 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+label {
     font-weight: bold;
-    padding: 10px;
-    
 }
 
-.unit{
-display: flex;
+.unit {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
-.item{
-flex-grow: 1;
+
+.item {
+    flex: 1;
+    margin-right: 10px;
 }
-.center{
-    display:flex;
-    align-items: center;
+
+.center {
+    display: flex;
     justify-content: center;
+    margin-top: 20px;
+    clear: both;
 }
