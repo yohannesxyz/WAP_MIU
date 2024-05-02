@@ -17,6 +17,7 @@
 
 }
 #body{
+ 
     display: flex;
     padding-bottom: 40px;
    flex-wrap: wrap;
@@ -24,7 +25,7 @@
 #left{
 flex-grow: 1;
 }
-#left{
+#right{
     flex-grow: 1;
 }
 .asterix{
@@ -47,4 +48,23 @@ button{
  padding: 3px 20px;
  /* padding-right: 20px; */
  text-align: center;
+ margin: 10px;
+}
+
+label{
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+.unit{
+display: flex;
+}
+.item{
+flex-grow: 1;
+}
+.center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
