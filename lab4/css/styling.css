@@ -1,0 +1,50 @@
+#page{
+    border-color:rgba(34, 139, 130,0.5);
+    border-radius: 0.5px;
+    border-style:solid;
+    
+    
+}
+#header{
+    background-color: cadetblue;
+    padding: 10px;
+}
+#title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 30px;
+   
+
+}
+#body{
+    display: flex;
+    padding-bottom: 40px;
+   flex-wrap: wrap;
+}
+#left{
+flex-grow: 1;
+}
+#left{
+    flex-grow: 1;
+}
+.asterix{
+    color:red;
+}
+.underlinedText{
+    text-decoration: underline;
+}
+#checkBoxes{
+    display: flex;
+    flex-direction: column;
+    padding-left: 90px;
+}
+#paymentMode{
+display: flex;
+}
+button{
+ background-color:cadetblue ;
+ color: white;
+ padding: 3px 20px;
+ /* padding-right: 20px; */
+ text-align: center;
+}

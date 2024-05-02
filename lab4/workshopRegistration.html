@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styling.css">
+    <title>Workshop Registration</title>
+</head>
+<body>
+    <div id="page">
+<div id="header">
+    <span id="title">Workshop Registration</span>
+        More Actions <select name="" id="">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+</div>
+<br>
+<p class="underlinedText">Register now while seats are available!!</p>
+
+<div id="body">
+<div id="left">
+    <form action="">
+<label for="fname">First name <span class="asterix">*</span></label>
+<input type="text" name="fname" id="fname" required><br>
+<label for="lname">Last name <span class="asterix">*</span></label>
+<input type="text" name="lname" id="lname" required><br>
+<label for="companyInstitution">Company Institution <span class="asterix">*</span></label>
+<input type="text" name="companyInstitution" id="companyInstitution" required><br>
+<label for="Address">Address <span class="asterix">*</span></label>
+<textarea name="address" id="address" cols="30" rows="10" required></textarea><br>
+<label for="city">City</label>
+<input type="text" name="city" id="city"><br>
+<label for="region">State /Province / Region</label>
+<select name="region" id="region">
+   <option value="0">-Select-</option>
+    <option value="1">Iowa</option>
+    <option value="2">Washington</option>
+    <option value="3">Virgina</option>
+</select><br>
+<label for="country">Country</label>
+<select name="country" id="country">
+   <option value="0">-Select-</option>
+    <option value="1">USA</option>
+    <option value="2">Ethiopia</option>
+    <option value="3">Canada</option>
+</select><br>
+<label for="email">Email <span class="asterix">*</span></label>
+<input type="text" name="email" id="email" required><br>
+<label for="pNum">Phone Number <span class="asterix">*</span></label>
+<input type="text" name="pNum" id="pNum" required>
+</div>
+<div id="right">
+<p class="underlinedText" >Lunch</p> <br>
+<label for="meals"> Meal Preference</label>
+<select name="meals" id="meals">
+    <option value="">Vegeterian</option>
+    <option value="">Non-Vegeterian</option>
+    <option value="">Vegan</option>
+</select><br>
+
+<p class="underlinedText" >Payment Details</p><br>
+<div id="paymentMode">
+    <div><label> Payment Mode</label></div>
+    <div id="checkBoxes">
+        <label for="cash"><input type="checkbox" name="paymentMode" id="cash"> Cash</label>
+        <label for="cheque"><input type="checkbox" name="paymentMode" id="cheque"> Cheque</label>
+        <label for="dd"> <input type="checkbox" name="paymentMode" id="dd"> Demand Draft</label>
+    </div>
+</div>
+<label for="cNum">DD/Cheque No.</label>
+<input type="text" name="cNum" id="cNum"><br>
+<label for="BName">Drawn On(Bank Name)</label>
+<input type="text" name="BName" id="BName"><br>
+<label for="pAt">Payabel at</label>
+<input type="text" name="pAt" id="pAt"><br>
+</div>
+</div>
+<Button type="submit">Submit</Button>
+<Button type="reset">Reset</Button>
+</form>
+    </div>
+</body>
+</html>
