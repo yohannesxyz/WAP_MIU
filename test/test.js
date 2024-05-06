@@ -1,28 +1,5 @@
-function  foo(x)  {
 
-    let m;
-
-console.log(x, y);
-
-if(x > 5){
-
-var  y  =  5; m = x + y;
-
-} else {
-
-let  z  =  10; m = z;
-
-}
-
-x = m;
-
-console.log(x, y);
-
-}
-
-
-var  x  =  10;
-
-foo(3);
-
-console.log(x);
+var a = 5;
+var b = 6;
+const y = { a: 1, b: 2, add: () => { return this.a + this.b } }
+console.log(y.add()); 
