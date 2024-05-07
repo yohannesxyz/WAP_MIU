@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var a = 5;
-var b = 6;
-const y = { a: 1, b: 2, add: () => { return this.a + this.b } }
-console.log(y.add()); 
+      let group4 = {
+    title: "Our Group",
+    students: ["John", "Pete", "Alice"],
+
+    showList: function () {
+        this.students.forEach(function (student) {
+            console.log(this.title + ": " + student);
+        }.call(this)); // Use call to set the this value inside the forEach callback
+    }
+};
+
+group4.showList();
     </script>
     <style>
         /* Styling for li > p */

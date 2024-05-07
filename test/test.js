@@ -1,7 +1,12 @@
 
-console.log(b);
-if(false){
-    var b=0;
-}
+let i = 0;
 
-console.log(b);
+setTimeout(() => console.log(i), 100); // ?
+
+// assume that the time to execute this function is >100ms
+
+for(let j = 0; j < 100000000; j++) {
+
+  i++;
+
+}
