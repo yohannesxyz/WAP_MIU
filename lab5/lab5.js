@@ -21,6 +21,7 @@ const getNewArray = function (array) {
   }
   return strings;
 };
+
 // Question 3
 
 const concat = (a, b, c) => [...a, ...b, ...c];
