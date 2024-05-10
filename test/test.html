@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script>
-      let group4 = {
-    title: "Our Group",
-    students: ["John", "Pete", "Alice"],
-
-    showList: function () {
-        this.students.forEach(function (student) {
-            console.log(this.title + ": " + student);
-        }.call(this)); // Use call to set the this value inside the forEach callback
-    }
-};
-
-group4.showList();
-    </script>
+    <script src="./test.js"></script>
     <style>
-        /* Styling for li > p */
-        
-/* Styling for li p */
-
-ul li > p {
-    color: blue;
-}
-li p {
-    color: red;
-}
+      div {
+        color: red;
+        background-color: yellow;
+      }
+      p {
+        color: cyan;
+        background-color: gray;
+      }
+      span {
+        color: green;
+        background-color: blue;
+      }
+      .b > p {
+        color: purple;
+        background-color: pink;
+      }
+      div.b ul #item {
+        color: AliceBlue;
+        background-color: Beige;
+      }
     </style>
-</head>
-<body>
-    <form action="#">
-        Homepage:
-        <input type="url" name="website"
-        pattern="[^or].*" title="Include http://">
-        <input type="submit">
-        </form>
-        
-</body>
+  </head>
+  <body>
+    <div>
+      <p class="”a”">First</p>
+      <div class="”b”">
+        <p><span>Second</span></p>
+        <ul>
+          <li id="”item”"><p>Third</p></li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

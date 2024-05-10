@@ -50,4 +50,34 @@ const averageList = students
     x[y.name] = y.average;
     return x;
   }, {});
+ console.log(averageList)
+
+
  
+// master map and reduce
+// const students = [
+//     { name: "Quincy", grades: [99, 88], courses: ["cs301", "cs303"], transcript:[{a:"ff",b:"cc"},{a:"dd",b:"ee"},{a:"gg",b:"apple"}] },
+  
+//     { name: "Jason", grades: [29, 38], courses: ["cs201", "cs203"] , transcript:[{a:"ff",b:"cc"},{a:"dd",b:"ee"}]},
+  
+//     { name: "Alexis", grades: [79, 78,91], courses: ["cs105", "cs211"] , transcript:[{a:"ff",b:"cc"},{a:"dd",b:"ee"},{a:"gg",b:"apple"}]},
+  
+//     { name: "Sasm", grades: [91, 82], courses: ["cs445", "cs303"] , transcript:[{a:"ff",b:"cc"},{a:"dd",b:"ee"},{a:"gg",b:"apple"}]},
+  
+//     { name: "Katie", grades: [66, 77], courses: ["cs303", "cs477"] , transcript:[{a:"ff",b:"cc"},{a:"dd",b:"ee"},{a:"gg",b:"apple"}]},
+//   ];
+
+//   const function1 = function(students,major,course){
+//     let x =[];
+//    let mapped= students.filter(x=>x.name.includes("s")&&x.grades.includes(91)&&x.transcript.find(y=>y.a=="ff"));
+// x= mapped.map(z=>({name:z.name,course:z.grades.reduce((x,y,index,array)=>x+y/array.length,0)}));
+// return x;
+//   }
+
+//   const function2 = function(students){
+//    return function1(students).reduce((x,y)=>{
+// x[y.name]=y.course;
+//     return x;
+//    });
+//   }
+//   console.log(function2(students));
