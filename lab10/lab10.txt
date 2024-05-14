@@ -1,0 +1,45 @@
+1.)  there are 6 callback queues 
+I. Timers: This queue marks the start of an event loop and is set by setTimeout() and setInterval() methods.
+II. I/O callbacks: This is the second callback queue in the event loop and is scheduled by file reading and writing methods.
+III. Idle, prepare: These are internal callbacks used by Node.js.
+IV. Poll: This queue executes I/O-related callbacks. The event loop polls to check if I/O operations are complete and only queues up completed operation callbacks. When the control first enters the I/O queue, it is empty.
+V. Check: This queue is enqueued when the setImmediate() function is invoked.
+VI. Close: Some close callbacks will be pushed to this queue.
+nextTick and Promise are also callbacks in node but they are not part of the event loop.
+
+
+2.) 
+start
+end
+nextTick 1
+nextTick 2
+Promise...1
+Promise...2
+timeout 1
+timeout 2
+nextTick 3
+timeout 3
+
+3.)
+timeout
+Immediate
+readFile....
+
+4.)
+When running in a browser, the this keyword points to the window object. Since message is declared with var, it becomes a property of window,
+and "Hello World" is logged to the console. In Node.js, this refers to the global object, but message is not added to global.
+Node.js maintains variable scope, so the message is not logged in the console.
+
+5.)
+there will be an error becuase we are trying to execute an object as a function
+
+6.)
+the output will be josh edward because we assigned a function that outputs that at the end to module.exports
+
+7.)
+the output is still josh edward and we will not have a problem as we only reassigned exports not module.exports
+
+8.)
+the output is { firstname: 'John', lastname: 'Smith' } because at first exports and module.exports are pointing to 
+the same object so we assigned firstname and last name to that object but since we reasigned the exports to a new object
+and we are only returning module.exports we wont take the object having the method getfullname into considerartion
