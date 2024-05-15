@@ -1,23 +1,11 @@
-const result = (function(exports, module){
+const http = require('http');
 
-    exports = module.exports;
-
-    exports.firstname = 'John';
-
-    module.exports.lastname = 'Smith';
-
-    exports = {
-
-        getFullName: function(){
-
-            console.log('John Smith')
-
-        }
-
-    }
-
-    return module.exports;
-
-}).apply(null, [null, {exports: {}}]);
-
-console.log(result);
+http.createServer((req, res) => {
+    console.log("between");
+    console.log(req.url, req.method, req.headers);
+    console.log("between");
+    res.setHeader('Content-Type', 'text/html');
+    res.write('<head><title>My First Page</title></head>');
+    res.write('<body><h1>Hello From Node.js</h1></body>');
+    res.end();
+}).listen(3000);
