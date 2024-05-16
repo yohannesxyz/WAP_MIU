@@ -2,7 +2,7 @@ const Express = require('express');
 const BooksRouter=require('./routes/booksRouter')
 
 const app=Express();
-
+app.use(Express.json());
 app.use('/books',BooksRouter);
 
 app.use((error, req, res, next) => {

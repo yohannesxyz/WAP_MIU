@@ -2,7 +2,7 @@
 const Book = require('../models/booksModel');
 
 exports.save=(req,res,next)=>{
-    const newBook = new Book(null,req.body.title,req.body.ISBN,req.body.publishedDate,req.body.author);
+    const newBook = new Book(null,req.body.title,req.body.ISBN,req.body.publishedDate,req.body.author).save();
     res.status(201).json(newBook);
 }
 

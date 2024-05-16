@@ -1,0 +1,42 @@
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+   "title": "Harry Potter",
+   "ISBN": "IB-92028",
+   "publishedDate": "2010-04-15",
+   "author": "shrek"
+}
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+   "title": "fire and ice",
+  "ISBN": "IB-28428",
+   "publishedDate": "2009-01-07",
+   "author": "mario"
+}
+
+###
+GET http://localhost:3000/books
+
+###
+GET http://localhost:3000/books/1
+
+###
+PUT http://localhost:3000/books/0
+Content-Type: application/json
+
+{
+   "title": "The breaking and the bad",
+   "ISBN": "IB-28428",
+   "publishedDate": "2120-01-07",
+   "author": "luigi"
+}
+
+###
+DELETE http://localhost:3000/books/0
+
+###
+DELETE http://localhost:3000/books/2

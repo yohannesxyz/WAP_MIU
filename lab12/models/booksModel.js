@@ -8,7 +8,7 @@ module.exports = class Book {
     this.publishedDate = publishedDate;
     this.author = author;
   }
-  static save() {
+   save() {
     this.id = ID++;
     books.push(this);
     return this;
@@ -27,11 +27,11 @@ module.exports = class Book {
     }
   }
 
-  static update(id) {
+  update(id) {
     const bookIndex = books.findIndex((b) => b.id == id);
     if (bookIndex > -1) {
       this.id = id;
-      books[index] = this;
+      books[bookIndex] = this;
       return this;
     } else {
       throw new Error("There is no book in the library with id: " + id);
